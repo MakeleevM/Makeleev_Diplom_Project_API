@@ -15,7 +15,7 @@
 * <a href="#allure">Allure отчёт</a>
 * <a href="#allure-testops">Интеграция с Allure TestOps</a>
 * <a href="#jira">Интеграция с Jira</a>
-* <a href="#telegram">Уведомление в Telegram</a>
+* <a href="#telegram">Уведомления в Telegram с использованием бота</a>
 
 ____
 <a id="tools"></a>
@@ -72,6 +72,9 @@ ____
 
 ## <img alt="Jenkins" height="25" src="media/logo/Jenkins.svg" width="25"/> <a name="Сборка">Сборка в [Jenkins](https://jenkins.qa.guru/job/41-Mace133v-HW25_API/)</a>
 
+Для запуска сборки необходимо перейти в раздел **Собрать с параметрами** и нажать кнопку **Собрать**.  
+После выполнения сборки, в блоке **История сборок** напротив номера сборки появятся значки **Allure Report** и **Allure TestOps**, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
+
 <p align="center">
 <a href="https://jenkins.qa.guru/job/41-Mace133v-HW25_API/"><img src="media/screenshots/jenkins.png" alt="Jenkins"/></a>
 </p>
@@ -108,6 +111,8 @@ ____
 
 ## <img src="media/logo/Allure_TO.svg" width="25" height="25" alt="Allure TestOps"/> Интеграция с <a target="_blank" href="https://allure.qa.guru/project/5303/test-cases?treeId=0">Allure TestOps</a>
 
+На Dashboard в Allure TestOps видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а также результаты прогона приходят по интеграции при каждом запуске сборки.
+
 ### *Allure TestOps Dashboard*
 
 <p align="center">
@@ -119,6 +124,8 @@ ____
 
 ## <img src="media/logo/Jira.svg" width="25" height="25" alt="Jira"/> Интеграция с <a target="_blank" href="https://jira.qa.guru/browse/REF-10">Jira</a>
 
+Реализована интеграция Allure TestOps с Jira, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
+
 <p align="center">
 <a href="https://jira.qa.guru/browse/REF-10"><img title="Jira" src="media/screenshots/jira.jpg"></a>
 </p>
@@ -126,7 +133,9 @@ ____
 ____
 <a id="telegram"></a>
 
-## <img src="media/logo/Telegram.svg" width="25" height="25" alt="Telegram"/> Уведомление в Telegram
+## <img src="media/logo/Telegram.svg" width="25" height="25" alt="Telegram"/> Уведомления в Telegram с использованием бота
+
+После завершения сборки специальный бот, созданный в Telegram, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
 <img title="Telegram notification" src="media/screenshots/telegram.jpg">
