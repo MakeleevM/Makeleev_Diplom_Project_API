@@ -11,7 +11,8 @@ import static helpers.CustomApiListener.withCustomTemplates;
 import static io.restassured.http.ContentType.JSON;
 
 public class Specification {
-    private static final ApiConfig config = ConfigFactory.create(ApiConfig.class);
+
+    private static final ApiConfig config = ConfigFactory.create(ApiConfig.class, System.getProperties());
 
     public static RequestSpecification requestSpec() {
         return new RequestSpecBuilder()

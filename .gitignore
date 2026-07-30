@@ -1,12 +1,11 @@
-git# Default ignored files
-/shelf/
-/.idea/workspace.xml
+.gradle/
+build/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.log
+out/
+shelf/
 
-build
-/.gradle/
-/.idea/
-gradle/
-/gradlew
-/gradlew.bat
-/settings.gradle
-
+src/test/resources/auth.properties
