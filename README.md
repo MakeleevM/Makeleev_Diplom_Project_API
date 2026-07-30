@@ -126,7 +126,7 @@ ____
 ____
 <a id="telegram"></a>
 
-## <img src="media/logo/Telegram.svg" width="25" height="25" alt="Telegram"/> Уведомление в Telegram при помощи бота
+## <img src="media/logo/Telegram.svg" width="25" height="25" alt="Telegram"/> Уведомление в Telegram
 
 <p align="center">
 <img title="Telegram notification" src="media/screenshots/telegram.jpg">
